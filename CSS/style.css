@@ -62,14 +62,21 @@ body h2 {
     justify-content: space-between;
     justify-content: space-around;
     justify-content: space-evenly;
-}
-
-#Children .flexbox-container .flexbox_item {
-    font-size: 24px;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: orange;
-    text-shadow: 1px 1px 1px #333;
+    /* Alig Items */
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    /* Aling Content */
+    align-content: normal;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: stretch;
 }
 
 #Children .flexbox-container {
@@ -78,4 +85,62 @@ body h2 {
     height: 300px;
     /* Display */
     display: flex;
+    /* Flex Grow & Shrink */
+    flex-wrap: wrap;
+}
+
+#Children .flexbox-container .flexbox_item {
+    font-size: 24px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: orange;
+    text-shadow: 1px 1px 1px #333;
+    /* Display */
+}
+
+
+/* Flex Order */
+
+
+/* #Children .flexbox-container .flexbox_item:nth-child(1) {
+    order: 2;
+}
+
+#Children .flexbox-container .flexbox_item:nth-child(2) {
+    order: 2;
+}
+
+#Children .flexbox-container .flexbox_item:nth-child(3) {
+    order: 2;
+}
+
+#Children .flexbox-container .flexbox_item:nth-child(4) {
+    order: 1;
+}
+
+#Children .flexbox-container .flexbox_item:nth-child(5) {
+    order: 1;
+}
+
+#Children .flexbox-container .flexbox_item:nth-child(6) {
+    order: 1;
+} */
+
+
+/* Flex Grow & Shrink */
+
+#Children .flexbox-container .flexbox_item {
+    /* width: 300px; */
+}
+
+
+/* #Children .flexbox-container .flexbox_item:nth-child(6) {
+    flex-shrink: 1;
+} */
+
+
+/* Align self */
+
+#Children .flexbox-container .flexbox_item:first-child {
+    align-self: center;
 }
